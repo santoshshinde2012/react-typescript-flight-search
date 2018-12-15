@@ -1,0 +1,47 @@
+[{
+	"id": 1,
+	"airline": "air india",
+	"number": "ai-202",
+	"from": "India",
+	"to": "Indonesia",
+	"from_code": "IN",
+	"to_code": "ID",
+    "depart_date": "03/01/2017-10:00 AM",
+	"arrive_date": "04/01/2017-23:00 PM",
+	"price": 9500
+}, {
+	"id": 2,
+	"airline": "indigo",
+	"number": "ind-202",
+	"from": "India",
+	"to": "Indonesia",
+	"from_code": "IN",
+	"to_code": "ID",
+	"depart_date": "01/01/2017-10:00 AM",
+	"arrive_date": "04/01/2017-23:00 PM",
+	"price": 10500
+},
+{
+	"id": 3,
+	"airline": "indigo",
+	"number": "ind-202",
+	"from": "Haiti",
+	"to": "Indonesia",
+	"from_code": "HT",
+	"to_code": "ID",
+	"depart_date": "01/01/2017-10:00 AM",
+	"arrive_date": "04/01/2017-23:00 PM",
+	"price": 10500
+},
+{
+	"id": 1,
+	"airline": "air india",
+	"number": "ai-202",
+	"from": "India",
+	"to": "Haiti",
+	"from_code": "IN",
+	"to_code": "HT",
+    "depart_date": "03/01/2017-10:00 AM",
+	"arrive_date": "04/01/2017-23:00 PM",
+	"price": 9500
+}]

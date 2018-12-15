@@ -1,0 +1,92 @@
+// type
+$fs-h1: 2.8rem;
+$fs-h2: 2rem;
+$fs-h3: 1.5rem;
+$fs-small: 0.8rem;
+
+$line-height: 1.5;
+
+//$color-gre;#enish-yellow: #b7bf10;
+$color-greenish-yellow-primary: #b7bf10;
+$color-greenish-yellow-secondary: #929e43;
+
+//font names
+$sans-serif: "Open Sans", sans-serif;
+
+// color
+$color-gray10: #ccc;
+$color-gray11: #dddddd;
+$color-gray12: #f3f3f3;
+$color-gray13: #e9e9e9;
+$color-gray14: #e5e5e5;
+$color-gray15: #f9f9f9;
+$color-gray16: #bbb;
+$color-gray-button-background-color: #eaeaea;
+
+$color-black: #222;
+$color-black2: #000000;
+$color-black3: #333;
+
+$color-white: #fff;
+$color-white2: #fbfcef;
+$color-white3: #f4f4f4;
+
+$color-white4: #444;
+$color-white5: #999;
+$color-white6: #666;
+$color-white7: #eee;
+$color-white8: #555;
+$color-white9: #333;
+$color-white10: #111;
+$color-white11: #faf6f6;
+$color-white12: #f0f0f0;
+
+$color-red: #b7312c;
+
+$color-text: #333333;
+
+$color-dark-blue: #002e5d;
+$color-h1: $color-dark-blue;
+$color-h2: $color-h1;
+
+//shadow color
+$shadow1: rgba(0, 0, 0, 0.07);
+$shadow2: rgba(0, 0, 0, 0.05);
+$shadow3: rgba(0, 0, 0, 0.02);
+$shadow4: rgba(0, 0, 0, 0.01);
+$shadow5: rgba(0, 0, 0, 0.2);
+$shadow6: rgba(0, 0, 0, 0.1);
+
+// font-weights
+$font-weight-hairline: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-heavy-bold: 900;
+
+// z-index master list
+$z-sticky: 999;
+$z-main-nav: 1000;
+$z-dropdown: 1001;
+$z-modal: 1002;
+$z-loading: 1004;
+$z-tooltip: 1005;
+
+// misc
+$margin-block: 1.5rem;
+$padding-td: 12px;
+$padding-input: 5px;
+$gutter: 2.2rem;
+$button-border-radius: 6px;
+$button-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+// screen sizes
+$screen-min-width: 420px;
+$screen-xsmall: 565px;
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1240px;
+$screen-xlarge: 1920px;
