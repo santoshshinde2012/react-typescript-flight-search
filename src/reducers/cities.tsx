@@ -14,6 +14,10 @@ const initialState: CitiesState = {
     cities: [],
 };
 
+export interface CitiesReducer {
+  citiesReducer: CitiesState;
+}
+
 export function citiesReducer(state: CitiesState = initialState, action: CitiesAction): CitiesState {
   switch (action.type) {
     case constants.FETCH_CITIES_SUCCEEDED:

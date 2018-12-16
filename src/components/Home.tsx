@@ -1,12 +1,13 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { getCities } from '../actions/cities';
-import { ConnectedCitiesProps, CitiesProps, Cities } from '../types/index';
-import { CitiesReducer } from '../reducers/reducers';
 import Select from 'react-select';
 import DatePicker from 'react-datepicker';
+import { getCities } from '../actions/cities';
+import { ConnectedCitiesProps, CitiesProps, Cities } from '../types/index';
+import { CitiesReducer } from '../reducers/cities';
+import TripsList from './Trips';
 
-class HomeComponent extends React.Component<CitiesProps, {startDate: Date, selectedCities: Cities[]}>  {
+class HomeComponent extends React.Component<CitiesProps, {startDate: Date, selectedCities: string[]}>  {
  
   constructor(props: CitiesProps) {
     super(props);
@@ -25,38 +26,49 @@ class HomeComponent extends React.Component<CitiesProps, {startDate: Date, selec
   }
 
   onCitiesChange = (selectedOption: Cities[]) => {
-    this.setState({selectedCities : selectedOption});
+    let selectedCities: string[] = [];
+    selectedOption.map((item) => {
+      if (item.value) {
+        selectedCities.push(item.value);
+      }
+    });
+    this.setState({selectedCities});
   }
 
-  public render() {
-    const { cities } = this.props;
+  render() {
+    let { cities } = this.props;
     return (
-      <div className="row">
-        <div className="col-xs-12 col-sm-12 col-md-6">
-            <div className="form-group">
-               <div>Date</div>
-                <DatePicker
-                  selected={this.state.startDate}
-                  isClearable={true}
-                  onChange={this.onStartDateChange}
-                />
-            </div>
-            <div className="form-group">
-               <div className="select_option">
-                    <label htmlFor="cities">Cities</label>
-                    {
-                      cities ? (
-                          <Select
-                            closeMenuOnSelect={false}
-                            onChange={this.onCitiesChange}
-                            isMulti={true}
-                            options={cities}
-                          />
-                      ) : ''
-                    }
-               </div>
-            </div>
+      <div>
+        <div className="row">
+          <div className="col-xs-12 col-sm-12">
+              <div className="form-group">
+                <div>Date</div>
+                  <DatePicker
+                    selected={this.state.startDate}
+                    isClearable={true}
+                    onChange={this.onStartDateChange}
+                  />
+              </div>
+              <div className="form-group">
+                <div className="select_option">
+                      <label htmlFor="cities">Cities</label>
+                      {
+                        cities ? (
+                            <Select
+                              closeMenuOnSelect={false}
+                              onChange={this.onCitiesChange}
+                              isMulti={true}
+                              options={cities}
+                            />
+                        ) : ''
+                      }
+                </div>
+              </div>
+          </div>
         </div>
+        <section className="flights">
+              <TripsList startDate={this.state.startDate} selectedCities={this.state.selectedCities} />
+        </section>
       </div>
     );
   }
