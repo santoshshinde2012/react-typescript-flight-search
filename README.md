@@ -6,6 +6,9 @@
 * React
 * Redux
 * TsLint
+* scss
+* node-sass-chokidar
+* react-scripts-ts
 
 ### Cloning The GitHub Repository
 
@@ -43,6 +46,15 @@ $ npm start
 
 Your application should run on port 8080 with the *development* environment configuration, so in your browser just go to [http://localhost:8080/](http://localhost:8080/)
 
+## Running Your Application Test Cases
+
+Go to the project dir and start your app with this npm script.
+
+Run your application using npm:
+
+```bash
+$ npm run test
+```
 
 
 ### About Me
