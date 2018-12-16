@@ -38,7 +38,7 @@ class HomeComponent extends React.Component<CitiesProps, {startDate: Date, selec
   render() {
     let { cities } = this.props;
     return (
-      <div>
+      <div className="full-width">
         <div className="row">
           <div className="col-xs-12 col-sm-12">
               <div className="form-group">
